@@ -20,8 +20,8 @@
 
 ## Base By
 * [`Caliph`](https://github.com/caliph91/bot-whatsapp)
-
+* [`Amel`](https://github.com/xmell91/mel-bot)
 
 ## Author 
 * [`Caliph`](https://github.com/caliph91)
-* [`Ameys`](https://github.com/xmell91)
+* [`Amel`](https://github.com/xmell91)
