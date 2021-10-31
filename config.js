@@ -24,9 +24,6 @@ global.packname = 'WhatsApp Bot' // Nama Packname Sticker
 // LIST APIKEY
 
 global.APIs = { // API Prefix
-
-  clph: 'https://recoders-area.caliph.repl.co',
-  rikka: 'https://rikka-api.xyz',
   nrtm: 'https://nurutomo.herokuapp.com',
   xteam: 'https://api.xteam.xyz',
   lol: 'https://api.lolhuman.xyz',
@@ -38,10 +35,9 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey Here
    'http://api.vhtear.com': 'YOUR-APIKEY', // Get Apikey on https://vhtear.com
    'https://api.lolhuman.xyz': 'YOUR-APIKEY', // Get Apikey on https://api.lolhuman.xyz
-  'https://api.xteam.xyz': 'YOUR-APIKEY', // Get Apikey on https://api.xteam.xyz
+  'https://api.xteam.xyz': 'ameysbot', // Get Apikey on https://api.xteam.xyz
   'https://api.zeks.me': 'rikkabotwa', // Free Ampikey :v
-  'https://melcanz.com': 'YOUR-APIKEY', // Buy Apikey On https://wa.me/6287755080455 Or Register On https://melcanz.com
-  'https://rikka-api.xyz': 'YOUR-APIKEY', // Buy Apikey On https://wa.me/62882003806038 Or Register On https://rikka-api.xyz
+  'https://melcanz.com': 'trial', // BTW APIKEY TRIAL 2 HARI SISANYA BELI Buy Apikey On https://wa.me/6287755080455 Or Register On https://melcanz.com
 }
 
 let file = require.resolve(__filename)
