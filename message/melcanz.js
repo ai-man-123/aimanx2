@@ -191,7 +191,7 @@ melcanz.sendMessage(m.chat, { url: result }, mType.image, { quoted: m, fileLengt
 break
 case prefix+'loli':
 m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
-var url = global.API('mel', '/api/loli', {}, 'apikey')
+var url = global.API('mel', '/loli', {}, 'apikey')
 melcanz.sendMessage(m.chat, { url }, mType.image, { quoted: m , caption: 'Lolinya banh...'})
 break
 case prefix+'lolimaker':
