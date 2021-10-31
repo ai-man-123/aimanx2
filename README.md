@@ -4,7 +4,7 @@
 ```
 > pkg install git
 > git clone https://github.com/xmell91/mel-bot
-> cd bot-whatsapp
+> cd mel-bot
 > bash install.sh
 > node index
 ```
