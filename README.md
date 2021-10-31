@@ -17,3 +17,11 @@
 * [`Nurutomo`](https://github.com/nurutomo)
 * [`MFarelS`](https://github.com/mfarels)
 * [`Caliph`](https://github.com/caliph91)
+
+## Base By
+* [`Caliph`](https://github.com/caliph91/bot-whatsapp)
+
+
+## Author 
+* [`Caliph`](https://github.com/caliph91)
+* [`Ameys`](https://github.com/xmell91)
