@@ -2,11 +2,14 @@
 
 * Termux
 ```
+> apt upgrade
+> pkg update && pkg upgrade 
 > pkg install git
 > git clone https://github.com/xmell91/mel-bot
 > cd mel-bot
 > bash install.sh
 > node index
+> NOTE KALO DISURU PILIH Y/N PILIH Y SEMUA
 ```
 
 ## Group
