@@ -19,14 +19,14 @@ function connect(conn) {
      personal: totalpc 
          }, 
          author: {
-         instagram: 'https://instagram.com/caliph91_',
-         github: 'https://github.com/caliph71',
-         youtube: 'https://youtube.com/channel/UCiOxx_EjWiINhwU7JFx2VLA',
-         website: 'https://me.caliph71.xyz'
+         instagram: 'https://instagram.com/melcanz.io',
+         github: 'https://github.com/xmell91',
+         youtube: 'https://youtube.com/channel/UCItB34QJeJsqxza5SGlP6bg',
+         Rest api: 'https://melcanz.com'
 },
         source_code: 'https://github.com/caliph91/bot-whatsapp'
 })
-    } else res.redirect("https://github.com/caliph91/bot-whatsapp")
+    } else res.redirect("https://github.com/xmell91/mel-bot")
     })
     
  app.listen(PORT, () => console.log('App listened on port', PORT))
