@@ -2,14 +2,16 @@
 
 * Termux
 ```
-> apt upgrade
-> pkg update && pkg upgrade 
-> pkg install git
-> git clone https://github.com/xmell91/mel-bot
+> apt upgrade 
+> pkg update && upgrade
+> note jika disuruh y/n pilih y
+> termux-setup-storage
+> cd /sdcard
+> cd download
 > cd mel-bot
 > bash install.sh
-> node index
-> NOTE KALO DISURU PILIH Y/N PILIH Y SEMUA
+> node .
+> Scan dah tuh qr 
 ```
 # edit nomer owner
 Dibagian config.js
