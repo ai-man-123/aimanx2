@@ -33,7 +33,7 @@ global.APIs = { // API Prefix
 }
 
 global.APIKeys = { // APIKey Here
-   'http://api.vhtear.com': 'YOUR-APIKEY', // Get Apikey on https://vhtear.com
+   'https://api.vhtear.com': 'YOUR-APIKEY', // Get Apikey on https://vhtear.com
    'https://api.lolhuman.xyz': 'YOUR-APIKEY', // Get Apikey on https://api.lolhuman.xyz
   'https://api.xteam.xyz': 'ameysbot', // Get Apikey on https://api.xteam.xyz
   'https://api.zeks.me': 'rikkabotwa', // Free Ampikey :v
