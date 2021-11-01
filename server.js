@@ -24,7 +24,7 @@ function connect(conn) {
          youtube: 'https://youtube.com/channel/UCItB34QJeJsqxza5SGlP6bg',
          Rest api: 'https://melcanz.com'
 },
-        source_code: 'https://github.com/caliph91/bot-whatsapp'
+        source_code: 'https://github.com/xmell91/mel-bot'
 })
     } else res.redirect("https://github.com/xmell91/mel-bot")
     })
