@@ -1,3 +1,6 @@
+# link download
+> https://www.mediafire.com/file/q7jcht5j6plo18p/Mel-bot-main.zip/file
+
 # Cara Penginstalan
 
 * Termux
