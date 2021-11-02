@@ -25,19 +25,13 @@ global.packname = 'WhatsApp Bot' // Nama Packname Sticker
 
 global.APIs = { // API Prefix
   nrtm: 'https://nurutomo.herokuapp.com',
-  xteam: 'https://api.xteam.xyz',
-  lol: 'https://api.lolhuman.xyz',
-  vh: 'http://api.vhtear.com',
   zeks: 'https://api.zeks.me',
   mel: 'https://melcanz.com'
 }
 
 global.APIKeys = { // APIKey Here
-   'https://api.vhtear.com': 'YOUR-APIKEY', // Get Apikey on https://vhtear.com
-   'https://api.lolhuman.xyz': 'YOUR-APIKEY', // Get Apikey on https://api.lolhuman.xyz
-  'https://api.xteam.xyz': 'ameysbot', // Get Apikey on https://api.xteam.xyz
   'https://api.zeks.me': 'rikkabotwa', // Free Ampikey :v
-  'https://melcanz.com': 'trial', // BTW APIKEY TRIAL 2 HARI SISANYA BELI Buy Apikey On https://wa.me/6287755080455 Or Register On https://melcanz.com
+  'https://melcanz.com': 'YOUR-APIKEY', // Buy Apikey On https://wa.me/6287755080455 Or Register On https://melcanz.com
 }
 
 let file = require.resolve(__filename)
