@@ -1,6 +1,3 @@
-# link download
-> https://www.mediafire.com/file/q7jcht5j6plo18p/Mel-bot-main.zip/file
-
 # Cara Penginstalan
 
 * Termux
@@ -11,6 +8,8 @@
 > termux-setup-storage
 > cd /sdcard
 > cd download
+> cp -r mel-bot $home
+> cd
 > cd mel-bot
 > bash install.sh
 > node .
