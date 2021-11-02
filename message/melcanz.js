@@ -236,6 +236,7 @@ var [tek, tek2] = text.split('|')
 apii = global.API('mel', '/textpro/graffiti', { text: tek, text2: tek2 }, 'apikey')
 buffer = await getBuffer(apii)
 melcanz.sendMessage(m.chat, buffer, 'imageMessage', { quoted: m, caption: 'nih logonya banh' })
+break
 case prefix+'remlogo':
 if (!text) throw `Teksnya manaaa??`
 apii = global.API('mel', '/rem', { text }, 'apikey')
@@ -855,7 +856,7 @@ m.reply(util.format(e.message ? e.message : e))
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
   fs.unwatchFile(file)
-  console.log(chalk.redBright("Update './lib/melcanz.js'"))
+  console.log(chalk.redBright("Update './message/melcanz.js'"))
   delete require.cache[file]
   require(file)
 })
