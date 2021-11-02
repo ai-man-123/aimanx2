@@ -102,12 +102,7 @@ Other Menu
 - ${prefix}toimg (reply sticker)
 - ${prefix}tahta (teks)
 - ${prefix}tahta2 (teks)
-- ${prefix}ttp (teks)
-- ${prefix}ttp2 (teks)
-- ${prefix}ttp3 (teks)
 - ${prefix}attp (teks)
-- ${prefix}attp2 (teks)
-- ${prefix}attp3 (teks)
 - ${prefix}sticker (reply image/video)
 
 Search Menu
@@ -137,12 +132,21 @@ Random Menu
 - ${prefix}dare
 - ${prefix}truth
 - ${prefix}lolivid
+- ${prefix}husbu
+- ${prefix}megumin
+- ${prefix}lewd
 
+Meme Menu
+- ${prefix}darkjokes
+
+Logo Maker Menu
 - ${prefix}lolimaker (teks)
 - ${prefix}nekologo (teks|teks2)
 - ${prefix}sadboy (teks|teks2)
 - ${prefix}remlogo (teks)
 - ${prefix}kanekilogo (teks|teks2)
+- ${prefix}neon (teks)
+- ${prefix}graffiti (teks|teks2)
 `.trim()
 var img = fs.readFileSync(global.thumb)
 melcanz.sendMessage(m.chat, img, mType.image, { quoted: freply('Mel-Bot', img), caption: menu })
@@ -168,6 +172,26 @@ var waifu = global.API('https://api.waifu.pics', '/sfw/waifu')
 var { url } = await getJson(waifu)
 melcanz.sendMessage(m.chat, { url }, mType.image, { quoted: m , caption: 'Larii Ada Wibu...'})
 break
+case prefix+'husbu':
+m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
+var url = global.API('mel', '/husbu', {}, 'apikey')
+melcanz.sendMessage(m.chat, { url }, mType.image, { quoted: m })
+break
+case prefix+'lewd':
+m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
+var url = global.API('mel', '/nsfw/lewd', {}, 'apikey')
+melcanz.sendMessage(m.chat, { url }, mType.image, { quoted: m })
+break
+case prefix+'megumin':
+m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
+var url = global.API('mel', '/megumin', {}, 'apikey')
+melcanz.sendMessage(m.chat, { url }, mType.image, { quoted: m })
+break
+case prefix+'darkjokes':
+m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
+var url = global.API('mel', '/darkjokes', {}, 'apikey')
+melcanz.sendMessage(m.chat, { url }, mType.image, { quoted: m })
+break
 case prefix+'neko':
 m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
 var waifu = global.API('https://api.waifu.pics', '/sfw/neko')
@@ -191,7 +215,7 @@ melcanz.sendMessage(m.chat, { url: result }, mType.image, { quoted: m, fileLengt
 break
 case prefix+'loli':
 m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
-var url = global.API('mel', '/loli', {}, 'apikey')
+var url = global.API('mel', '/api/loli', {}, 'apikey')
 melcanz.sendMessage(m.chat, { url }, mType.image, { quoted: m , caption: 'Lolinya banh...'})
 break
 case prefix+'lolimaker':
@@ -200,6 +224,18 @@ apii = global.API('mel', '/lolimaker', { text }, 'apikey')
 buffer = await getBuffer(apii)
 melcanz.sendMessage(m.chat, buffer, 'imageMessage', { quoted: m, caption: 'Neh banh lolinya :v' })
 break
+case prefix+'neon':
+if (!text) throw `Teksnya manaaa??`
+apii = global.API('mel', '/textpro/neon', { text }, 'apikey')
+buffer = await getBuffer(apii)
+melcanz.sendMessage(m.chat, buffer, 'imageMessage', { quoted: m, caption: 'Neh banh logonya :v' })
+break
+case prefix+'graffiti':
+if (!text) throw `Teksnya manaaa??\nContoh : ${command} melcanz|ganz`
+var [tek, tek2] = text.split('|')
+apii = global.API('mel', '/textpro/graffiti', { text: tek, text2: tek2 }, 'apikey')
+buffer = await getBuffer(apii)
+melcanz.sendMessage(m.chat, buffer, 'imageMessage', { quoted: m, caption: 'nih logonya banh' })
 case prefix+'remlogo':
 if (!text) throw `Teksnya manaaa??`
 apii = global.API('mel', '/rem', { text }, 'apikey')
@@ -529,36 +565,11 @@ json = m.quoted ? m.quoted : m
 if (!/image|video/.test(json.mtype)) return m.reply(`Balas Video/Gambar dengan caption *${prefix + command}*!`)
 melcanz.sendSticker(m.chat, await json.download(), m, { packname, author })
 break
-case prefix+'ttp':
-  if (!args[0]) return m.reply('Teksnya?')
-  melcanz.sendSticker(m.chat, global.API('xteam', '/ttp', { text, file: '' }, 'APIKEY'), m, { packname, author })
-  break
-  case prefix+'ttp2':
-  if (!args[0]) return m.reply('Teksnya?')
-  melcanz.sendSticker(m.chat, global.API('lol', '/api/ttp', { text }, 'apikey'), m, { packname, author })
-  break
-  case prefix+'ttp3':
-  if (!args[0]) return m.reply('Teksnya?')
-   listwarna = ["red", "green", "blue", "purple", "cyan", "yellow", "white"]
-   warna = listwarna[Math.floor(Math.random() * listwarna.length)]
-  melcanz.sendSticker(m.chat, global.API('vh', '/textmaker', { text, warna }, 'apikey'), m, { packname, author })
-  break
   case prefix+'attp':
   if (!args[0]) return m.reply('Teksnya?')
-  buffer = await getBuffer(global.API('lol', '/api/attp', { text }, 'apikey'))
+  buffer = await getBuffer(global.API('mel', '/api/attp', { text }, 'apikey'))
   webp = await addExif(buffer, packname, author)
   melcanz.sendMessage(m.chat, webp, mType.sticker, { quoted: m })
-  break
-  case prefix+'attp2':
-  if (!args[0]) return m.reply('Teksnya?')
-  buffer = await getBuffer(global.API('xteam', '/attp', { text, file:''}, 'APIKEY'))
-  webp = await addExif(buffer, packname, author)
-  melcanz.sendMessage(m.chat, webp, mType.sticker, { quoted: m })
-  break 
-  case prefix+'attp3':
-  if (!args[0]) return m.reply('Teksnya?')
-  buffer = await getBuffer(global.API('rikka', '/attp', { text }, 'apikey'))
-  melcanz.sendSticker(m.chat, buffer, m, { packname, author })
   break
 case prefix+'toimg':
 case prefix+'stoimg':
