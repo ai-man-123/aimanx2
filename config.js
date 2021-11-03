@@ -8,7 +8,7 @@ global.fakereplyt = 'Mel-Bot WhatsApp' // Teks Untuk Fake Reply
 global.mess = {
 group : {
 welcome : `Welcome @user\n\nSelamat datang di grup @subject`, // Teks Untuk Welcome
-bye : `Bye @user`, // Teks Untuk Bye
+bye : `Bye '@user`, // Teks Untuk Bye
 promote: '@user Sekarang admin!', // Teks Untuk Detect Promote
 demote: '@user Sekarang bukan admin!' // Teks Untuk Detect Demote
 },

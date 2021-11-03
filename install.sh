@@ -4,3 +4,4 @@ apt-get install imagemagick -y
 apt-get install nodejs -y
 apt-get install tesseract-ocr-all -y
 npm install
+npm start

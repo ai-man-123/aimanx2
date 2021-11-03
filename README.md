@@ -8,7 +8,7 @@
 > termux-setup-storage
 > cd /sdcard
 > cd download
-> cp -r mel-bot $HOME
+> cp -r mel-bot $home
 > cd
 > cd mel-bot
 > bash install.sh
@@ -19,6 +19,7 @@
 Dibagian config.js
 ## Group
 * <a href="https://clph.pw/gcwa"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+
 # Thanks to
 * [`adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
 * [`Nurutomo`](https://github.com/nurutomo)
