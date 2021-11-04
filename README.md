@@ -1,3 +1,8 @@
+# Cara download sc di android
+-aktifkan mode dekstop
+-pencet logo code
+-download as Zip
+-udah
 # Cara Penginstalan
 
 * Termux
