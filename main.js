@@ -20,7 +20,7 @@ let melcanz = new WAPI()
 melcanz.browserDescription = Browsers.appropriate('Desktop')
 melcanz.browserDescription[0] = "Bot WhatsApp By @Melcanz.io"
 var { currentVersion } = await fetch.json(`https://web.whatsapp.com/check-update?version=1&platform=web`)
-melcanz.version = currentVersion.split('.').map(a => parseInt(a)) || [2, 2140, 12]
+melcanz.version = currentVersion.split('.').map(a => parseInt(a)) || [2, 2142, 12]
 melcanz.logger.level = 'warn'
 console.log(color(figlet.textSync('Base Wabot', {
 		font: 'Standard',
